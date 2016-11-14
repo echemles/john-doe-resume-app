@@ -15,7 +15,9 @@ An assignment submission for crowded.com
 
 ### Running App
 
-Install and run using the commands below:
+The app is live in [this link](https://s3.amazonaws.com/lester-misc/crowded-resume/index.html).
+
+To run locally, install and run using the commands below:
 
 ```
 npm install
@@ -27,7 +29,7 @@ Once up and running on terminal you may test the app on different devices by goi
 
 ### Concept
 
-Instead of a static HTML page, this project aims to create a rich app experience that reveals parts of the resume as they are needed. The layouts are mobile responsive. Although I wanted to take advantage of Bootstrap, creating a more customized design would fine-tune the experience further and create a unique experience.
+Instead of a static HTML page, this project aims to create a rich app experience that reveals parts of the resume as they are requested by the user. The layouts are mobile responsive. Although I wanted to take advantage of Bootstrap, creating a more customized design would fine-tune the experience further and create a unique experience.
 
 The app was built with modularity & user experience as the main priorities.
 
@@ -38,10 +40,11 @@ The site has been tested to work on Chrome & Safari with the following screen re
 
 * 21" iMac
 * 15" MacBook Pro
-* iPad (Portait & Landscape)
+* iPad
 * iPhone 6
 * iPhone 6S
 * iPhone 5
+
 
 ### Credits
 

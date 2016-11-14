@@ -1,4 +1,4 @@
-//this file is used to store data to be used across the app for modularity
+//this file is used as a central data store for the app
 
 module.exports	= {  
 	logo: (<svg viewBox="0 0 320.3 49.7">

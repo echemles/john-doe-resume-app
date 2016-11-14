@@ -1,0 +1,61 @@
+.skills-page {
+	background-color: $bgGray;
+
+	h2 {
+		font-weight: 300;
+		font-size: 40px;
+		margin: 50px 0 20px 0;
+	}
+
+	.list-laptop {
+		width: 800px;
+		position: absolute;
+			right: -80px;
+			bottom: -190px;
+	}
+
+	.skills-list {
+		max-width: 50vw;
+	    position: absolute;
+	    top: 60px;
+	    left: 10vw;
+	}
+
+	.skill {
+		display: inline-block;
+		background-color: white;
+		padding: 5px 10px;
+		margin: 5px;
+		border-radius: 5px;
+	}
+
+	@media(max-width: $tablet){
+		.skills-list {
+			left: 30px;
+		}
+	}
+
+	@media(max-width: $mobile){
+		h2 { 
+			font-size: 18px; 
+			margin-bottom: 10px;
+		}
+
+		.list-laptop {
+			width: 400px;
+			right: -20px;
+			bottom: -90px;
+		}
+
+		.skills-list { 
+			max-width: 40vw;
+			top: 0;
+		}
+
+		.skill {
+			font-size: 14px;
+			padding: 2px 4px;
+			margin: 2px;
+		}
+	}
+}

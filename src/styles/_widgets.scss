@@ -1,0 +1,147 @@
+.contact {
+	position: absolute;
+	bottom: 15vh;
+	left: 10vw;
+	transition: all .5s;
+
+	&.skills {
+		bottom: 10vh;
+		left: 10vw;
+
+		a {
+			margin: 20px;
+			height: 50px;
+			width: 50px;
+		}
+
+		.phone { background-image: url(https://s3.amazonaws.com/lester-misc/crowded-resume/phone-white.gif); }
+		.mail { background-image: url(https://s3.amazonaws.com/lester-misc/crowded-resume/email-white.gif); }
+	}
+
+	a {
+		display: block;
+		height: 70px;
+		width: 70px;
+		border-radius: 50px;
+		background-size: cover;
+		margin: 40px;
+		transition: all .3s $ease;
+		cursor: pointer;
+		transform: translateX(-100vw);
+		animation: move-right 1s $ease;
+		animation-fill-mode: forwards;
+		animation-delay: 2s;
+		@extend .shadow;
+
+		&:active {
+			transform: scale(.9, .9);
+		}
+	}
+
+	.phone { 
+		background-image: url(https://s3.amazonaws.com/lester-misc/crowded-resume/phone.gif); 
+		animation-delay: 2s;
+	}
+
+	.mail {
+		background-image: url(https://s3.amazonaws.com/lester-misc/crowded-resume/email.gif);
+		animation-delay: 2.1s;
+	}
+
+	@media(max-width: $tablet){
+		&.skills { left: 70vw; }
+	}
+
+	@media(max-width: 640px){
+		&.experience,
+		&.education {
+			left: 0;
+			bottom: 6vh;
+
+			a {
+				margin: 20px;
+				height: 50px;
+				width: 50px;
+			}
+		}
+	}
+
+	@media(max-width: $mobile){
+		left: 0;
+		bottom: 14vh;
+
+		a {
+			margin: 20px;
+			height: 50px;
+			width: 50px;
+		}
+	}
+
+	@media(max-width: 320px) {
+		&.experience,
+		&.education { bottom: 35vh; }
+	}
+}
+
+.navigation {
+	position: absolute;
+	top: calc(60vh - 100px);
+	right: calc(10vw - 500px);
+	text-transform: uppercase;
+	transition: all .3s;
+
+	&.skills {
+		top: 100px;
+	}
+
+	&.education,
+	&.experience {
+		top: 50px;
+	}
+
+	a {
+		@extend .shadow;
+		display: block;
+		padding: 10px 10px 10px 30px;
+		width: 600px;
+		border-radius: 100px;
+		background-color: $lightGray;
+		margin: 30px;
+		cursor: pointer;
+		transform: translateX(500vw);
+		transition: all .3s $ease;
+		animation: move-left 1s $ease;
+		animation-fill-mode: forwards;
+		animation-delay: 2s;
+
+		&:hover {
+			margin-left: 10px;
+		}
+	}
+
+	@media(max-width: $tablet){
+		top: calc(75vh - 100px);
+		right: calc(5vw - 500px);
+
+		a {
+			margin: 15px;
+			padding: 5px 5px 5px 20px;
+		}
+	}
+
+	@media(max-width: $mobile){
+		&.experience,
+		&.education {
+			a { 
+				opacity: 0; 
+				visibility: hidden;
+			}
+
+			a:first-child {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+

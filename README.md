@@ -26,7 +26,7 @@ Open up a browser window and go to [localhost:3000](http://localhost:3000/).
 
 ### Concept
 
-Instead of a static HTML page, this project aims to create a rich app experience that reveals parts of the resume as they are requested by the user. The layouts are mobile responsive. Although I wanted to take advantage of Bootstrap, creating a more customized design would fine-tune the experience further and create a unique experience.
+Instead of a static HTML page, this project aims to create a rich app experience that reveals parts of the resume as they are requested by the user. The layouts are mobile responsive. Although I wanted to take advantage of Bootstrap, creating a more customized design would fine-tune the user experience.
 
 The app was built with modularity & user experience as the main priorities. 
 
